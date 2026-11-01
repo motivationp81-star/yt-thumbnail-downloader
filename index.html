@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>YT Thumbnail Downloader — get any YouTube thumbnail in HD</title>
+<meta name="description" content="Paste a YouTube link and download its thumbnail in HD, SD and other sizes. Free, no sign-up, works in the browser." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>YT Thumbnail Downloader</h1>
+    <p class="sub">Paste a YouTube video link, get its thumbnail in every size — HD included. Free, no sign-up.</p>
+
+    <div class="bar">
+      <input id="urlInput" type="text" placeholder="Paste a YouTube link or video ID…" autocomplete="off" spellcheck="false" />
+      <button id="goBtn" type="button">Get thumbnail</button>
+    </div>
+    <p id="msg" class="msg" hidden></p>
+
+    <section id="results" class="results" hidden>
+      <p class="vidline">Video ID: <code id="vidOut"></code></p>
+      <div id="cards" class="cards"></div>
+      <p class="note">Some older or smaller channels' videos do not have the biggest (HD) size — those cards will say “not available”.</p>
+    </section>
+
+    <footer>
+      <p>Thumbnails belong to their respective video owners — use them within YouTube's terms and copyright rules. This tool only builds the public thumbnail links YouTube itself serves; nothing is uploaded anywhere.</p>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
